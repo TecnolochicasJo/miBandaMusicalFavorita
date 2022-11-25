@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #13161e url(./../../images/bts/discography/love_yourself-tear/discography-bg-m.jpg) no-repeat center top;
+    color: white;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 2.2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+.boton-musica{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color:  #9e538c; /*#B79EB9,  ,, #B4546C*/
+    color: white;
+    
+}
+
+.boton-musica:hover {
+    background-color: rgba(153, 60, 137, 0.736); /*#B4546C, #B79EB9, #B4546C, #3E5D8C*/
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.color-acento {
+    color: #B4546C;
+}
+
+/***************************************************************
+                   Encabezado
+****************************************************************/
+header {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    margin: 0;
+    width: 15%;
+    padding: 15px 15px;
+    border-radius: 100px;
+}
+
+header .contenedor {
+    display: flex;  /*Para poder mover los elemntos*/
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header .link-menu {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold; /*letras en negritas*/
+    color: white;
+}
+
+header .link-menu:hover {
+    color: #e47ef9; /*Rosa: */
+}
+
+/***************************************************************
+                    Seccion #hero principal 
+****************************************************************/
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh; /*Adapta la altura de los dispositivos*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('https://www.musicmundial.com/wp-content/uploads/2022/05/BTS-El-drama-coreano-del-grupo-que-puedes-ver-en-YouTube.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+}
+
+#hero .boton-musica {
+    font-size: 1.5em;
+}
+
+/***************************************************************
+                    Seccion somos-bts
+****************************************************************/
+
+.somos-bts .contenedor {
+    text-align: center;
+    padding: 200px 12px;   
+}
+
+.contenedor .sobre-nosotros {
+    font-size: 1.2rem;
+    
+}
+/* .somos-bts .texto {
+    font-size: 2.0rem;
+} */
+/***************************************************************
+                    Seccion musica
+****************************************************************/
+
+.musica {
+    /* background-color: rgb(30, 30, 30); */
+    text-align: center;
+}
+
+.musica .contenedor {
+    padding: 10px 12px 120px;
+}
+
+.musica h2 {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+.musica p {
+    display: none; /*deja de mostrar el texto*/
+}
+
+.musica .album {
+    background-color: yellow;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;    
+    width: 800px;
+}
+
+.album:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url('../css/imagenes/albums-img/album-butter.jpg');
+}
+
+.album:nth-child(2){
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)        
+    ), 
+    url('../css/imagenes/albums-img/album-myuniverse.png');
+}
+
+.album:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url('../css/imagenes/albums-img/album-dynamite.jpg');
+}
+
+/***************************************************************
+                    Seccion tour
+****************************************************************/
+.tour .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 12px;
+}
+
+.tabla-tour {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 1px solid purple; */
+    text-align: center;
+}
+
+.tabla-tour th, td {
+    padding: 15px;
+    /* border: 1px solid yellow; */
+}
+
+.tabla-tour .fila-impar {
+    background-color: #B4546C;
+}
+
+.tabla-tour .boton-comprar {
+    padding: 6px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color:  #d32b66; /*#B79EB9,  ,, #B4546C*/
+    color: white;
+}
+
+.tabla-tour .boton-comprar:hover {
+    background-color: #f30b54;
+}
+
+/***************************************************************
+                    Seccion integrante
+****************************************************************/
+.integrantes {
+    text-align: center;
+}
+
+.integrantes .contenedor {
+    padding: 150px 12px;
+}
+
+.integrantes li {
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+/***************************************************************
+                    Seccion final
+****************************************************************/
+
+
+.final {
+    text-align: center;
+    padding: 50px 12px;
+}
+
+.final h2 {
+    font-size: 8vw;
+}
+
+.final button {
+    font-size: 4vw;
+}
+
+
+/***************************************************************
+                    Seccion footer
+****************************************************************/
+.contacto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedor {    
+    display: flex;
+    justify-content: center; /* para centrar los elementos */
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    width: 500px;
+    display: flex;
+    justify-content: center; /* para centrar los elementos */
+    flex-direction: column;
+    align-items: center;
+    background-color: #d1a0da;
+    box-shadow: 2px 2px 10px rgba(251, 249, 249, 0.5);
+    padding: 50px;
+    border-radius: 20px; 
+}
+
+.formulario label {
+    color: #13161e;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #9e538c;
+}
+
+.formulario button {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color:  #9e538c; /*#B79EB9,  ,, #B4546C*/
+    color: white;  
+
+}
+
+.formulario button:hover {
+    background-color: #d32b66;
+}
+
+
+.contacto ul {
+    display: flex;
+}
+
+.contacto h3 {
+    padding: 50px 12px;
+}
+
+.contacto .contenedor img {
+    width: 20%;
+    height: 80%;
+    padding: 5px 0px;
+    border-radius: 50%;
+}
+
+.contacto .contenedor .link-contacto{
+    width: 25%;
+    height: 80%;
+    padding: 5px 0px;
+}
+.contenedor p {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.8em;
+}
+
+.contenedor a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/***************************************************************
+                    Pasamos a la version desktop
+****************************************************************/
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+        /* background-color: #B4546C; */
+    }
+
+    header .contenedor {
+        flex-direction: row; /*Para que el encabezado se muestre de forma horizontal*/
+        justify-content: space-between;
+    }
+
+    header .logo {
+        width: 10%;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #somos-bts .contenedor {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
