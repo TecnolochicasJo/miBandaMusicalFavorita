@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi banda de musica favorita</title>
+    <link rel="stylesheet" href="css/styele.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <img class="logo" src="css/imagenes/logoBTS.jpg" alt="logo bts">
+            <nav>
+                <a href="#hero" class="link-menu">Inicio</a>
+                <a href="#somos-bts" class="link-menu">Sobre Nosotros</a>            
+                <a href="#musica" class="link-menu">Musica</a>
+                <a href="#tour" class="link-menu">Tour</a>
+                <a href="#integrantes" class="link-menu">Integrantes</a>
+                <a href="#final" class="link-menu">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>B T S <br> Reyes del K-POP</h1>
+        <button class="boton-musica" id="boton-musica">ESCÚCHANOS YA!</button>
+    </section>
+
+    <section class="somos-bts" id="somos-bts" >
+        <div class="contenedor">
+            <div class="img-contenedor"></div>
+            <div class="texto">
+                <h2>Somos <span class="color-acento">BTS!</span></h2>
+                <p class="sobre-nosotros">Somos una banda surcoreana formada por Big Hit Entertainment, conformada por siete integrantes. El nombre del grupo, BTS, es una abreviatura de la expresión coreana Bangtan Sonyeondan, que literalmente significa “Boy Scouts a prueba de balas”.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="musica" id="musica">
+        <div class="contenedor">
+            <h2>Nuestra Musica</h2>
+            <div class="musica-album">
+                <div class="album">
+                    <h3>Butter</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus vitae iusto natus neque aut. Cupiditate soluta aut eum commodi dignissimos beatae culpa possimus, quis totam, tempore nesciunt modi rem?</p>
+                    <button class="boton-musica" id="boton-musica">Escuchar ya!</button>
+                </div>
+                <div class="album">
+                    <h3>My Universe</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus vitae iusto natus neque aut. Cupiditate soluta aut eum commodi dignissimos beatae culpa possimus, quis totam, tempore nesciunt modi rem?</p>
+                    <button class="boton-musica" id="boton-musica">Escuchar ya!</button>
+                </div>
+                <div class="album">
+                    <h3>Dynamite</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus vitae iusto natus neque aut. Cupiditate soluta aut eum commodi dignissimos beatae culpa possimus, quis totam, tempore nesciunt modi rem?</p>
+                    <button class="boton-musica" id="boton-musica">Escuchar ya!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tour" id="tour">
+        <div class="contenedor">
+            <h2>Tour 2022</h2>
+            <table class="tabla-tour">
+                <tr class="fila-impar"> <!-- Para las filas -->
+                    <th>Fecha</th> <!-- Para el encabezado de las columnas -->
+                    <th>Ciudad</th>
+                    <th>Lugar</th>
+                    <th>Boletos</th>
+                </tr>
+                <tr class="fila-par">
+                    <td>Diciembre 25</td> <!--Para el contendio de las filas-->
+                    <td>CDMX | México</td>
+                    <td>Auditorio Nacional</td>
+                    <td><button class="boton-comprar" id="boton-compar">COMPRAR</button></td>
+                </tr>
+                <tr class="fila-impar">
+                    <td>Febrero 14</td>
+                    <td>Los Ángeles | USA</td>
+                    <td>Teatro de Microsoft</td>
+                    <td><button class="boton-comprar" id="boton-comprar">COMPRAR</button></td>
+                </tr>
+                <tr class="fila-par">
+                    <td>Febrero 17</td>
+                    <td>Las Vegas | USA</td>
+                    <td>Teatro de Hotel Virginia</td>
+                    <td><button class="boton-comprar" id="boton-comprar">COMPRAR</button></td>
+                </tr>
+                <tr class="fila-impar">
+                    <td>Mayo 10</td>
+                    <td>Seúl | Corea del Sur </td>
+                    <td>Teatro Nacional de Corea</td>
+                    <td><button class="boton-comprar" id="boton-comprar">COMPRAR</button></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="integrantes" id="integrantes">
+        <div class="contenedor">
+            <h2>Integrantes de la banda</h2>
+            <ul>
+                <li>✔ Kim Nam-joo RM</li>
+                <li>✔ Kim Seok-jin Jin</li>
+                <li>✔ Min Yoon-gi Suga</li>
+                <li>✔ Jung Ho-seok J-hope</li>
+                <li>✔ Park Ji-min Jimmin</li>
+                <li>✔ Kim Tae-hyung V</li>
+                <li>✔ Jeon Jung-kook Jungkook</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="final" id="final">
+        <h2>No te pierdas los mejores eventos de BTS</h2>
+        <button class=" boton-musica boton-final" id="boton-final">+ SABER MAS</button>
+    </section>
+
+    <footer class="contacto" id="contacto">
+        <div class="contenedor">              
+            <h3>Deja tu comentario</h3>         
+            <div class="formulario">
+                <form action="#">
+                    <label for="comentario">Comentario</label>
+                    <br>
+                    <input type="textarea" class="comentario" id="comentario" name="comentario" placeholder="Deja aquí tu comentario" required>
+                    <br>
+                    <label for="correo" class="correo" id="correo" name="correo">Correo</label>
+                    <br>
+                    <input type="gmail" class="correo" id="Correo" name="correo" placeholder="Email" required>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <h3>Conecta con BTS</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/bts.bighitofficial/" target="_blank"><img src="css/imagenes/redesSociales-img/instagram.png" alt="instagram-bts"  class="link-contacto"></a></li>
+                <li><a href="https://es-la.facebook.com/bangtan.official/"><img src="css/imagenes/redesSociales-img/facebook.png" alt="facebook-bts"  class="link-contacto"></a></li>
+                <li><a href="https://twitter.com/bts_twt"><img src="css/imagenes/redesSociales-img/twitter.png" alt="twitter-bts" class="link-contacto"></a></li>
+                <li><a href="https://www.tiktok.com/@bts_official_bighit?lang=es" class="link-contacto-tiktok"><img src="css/imagenes/redesSociales-img/tik-tok.png" alt="tiktok-bts"></a></li>
+            </ul>            
+        </div>
+        <div class="contenedor">
+            <p>&copy; <a href="#" class="contenedor-luz" id="contenedor-luz">Luz</a> - TecnolochicasJo 2022</p>           
+        </div>
+    </footer>
+</body>
+</html>
